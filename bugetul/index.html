@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BUGETUL Espresso</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+  </head>
+
+  <body>
+    <script
+      type="module"
+      src="src/post.js"
+    ></script>
+     <div id="app">
+      <x-postpress apiHost="https://www.bugetul.ro" include="">
+        <div slot="articles">
+          <article>
+            <div class="titlu"><p align="center">BUGETUL</p></div>
+            <hr />
+          </article>
+        </div>
+      </x-postpress>
+    </div>
+    <script>
+      // after DOMContentLoaded
+      document.addEventListener("DOMContentLoaded", () => {
+        // get the reference to "app"
+        const app = document.getElementById("app");
+        // create a new x-postpress and include more posts
+        const xP = document.createElement("x-postpress");
+        xP.apiHost = "https://www.bugetul.ro";
+        //xP.include = "2634,2627,2482,2331";
+        // append it to the app
+        app.appendChild(xP);
+      });
+    </script>
+  </body>
+</html>

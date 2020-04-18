@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap');
+body {
+  margin: 0;
+  /* This is a font-stack that tries to use the system-default sans-serifs first */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.titlu {
+  font-family: 'Ubuntu', sans-serif;
+  color: indigo;
+  font-size: 100px;
+}
+
+#app {
+  padding: 2rem;
+  border: 25px solid indigo;
+;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+article a,
+article a:link,
+article a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+article a:hover,
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #ddd;
+}
+
+article h1 {
+  font-size: 45px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+article h2 {
+  color: #333;
+  font-size: smaller;
+}
+
+article {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+article hr {
+  clear: both;
+  display: block;
+}
+
+article img {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+x-postpress {
+  --a-color: #000;
+  --a-hover-text-decoration: underline;
+  --a-text-decoration: none;
+  --article-clear: inherit;
+  --article-margin-bottom: 1rem;
+  --article-margin-left: auto;
+  --article-margin-right: auto;
+  --article-margin-top: 0;
+  --article-width: 100%;
+  --h2-color: #333;
+  --h2-font-size: smaller;
+  --hr-clear: both;
+  --hr-display: block;
+  --img-display: inherit;
+  --img-float: inherit;
+  --img-height: auto;
+  --img-max-height: inherit;
+  --img-max-width: 100%;
+  --img-padding-bottom: inherit;
+  --img-padding-left: inherit;
+  --img-padding-right: inherit;
+  --img-padding-top: inherit;
+  --img-width: auto;
+  --p-clear: inherit;
+  --p-text-align: inherit;
+  --ul-list-style-type: inherit;
+}
